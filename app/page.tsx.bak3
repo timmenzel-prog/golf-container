@@ -14,17 +14,17 @@ export default function Home() {
     borderBottom: "1px solid rgba(255,255,255,0.08)",
   }}
 >
- <div className="p1p-container pt-28 md:pt-36 pb-16 md:pb-24">
+  <div className="p1p-container pt-14 md:pt-20 pb-12 md:pb-16">
     <div className="grid gap-8 md:grid-cols-12 items-start">
       
       {/* LEFT */}
 <div className="md:col-span-7">
   <div
-  className="mt-6 md:mt-8 text-xs md:text-sm font-black tracking-wider uppercase"
-  style={{ color: "#7bdcb5" }}
->
-  PRO1PUTT Innovation
-</div>
+    className="text-xs md:text-sm font-black tracking-wider uppercase"
+    style={{ color: "#7bdcb5" }}
+  >
+    PRO1PUTT Innovation
+  </div>
 
   <h1
     className="mt-4 text-4xl md:text-6xl font-black leading-[1.05]"
@@ -59,13 +59,7 @@ export default function Home() {
     </a>
   </div>
 
-  
-</div>
-
-      {/* RIGHT */}
-<div className="md:col-span-5">
-  {/* Visual */}
-  <div className="mt-6 md:mt-8 mb-6">
+  <div className="mt-10">
     <img
       src="/golf-container/hero.png"
       alt="Golf Simulator Container"
@@ -76,28 +70,36 @@ export default function Home() {
       }}
     />
   </div>
-
-  {/* Info card */}
-  <div
-  className="p1p-card p-8 mb-12 md:mb-16"
-    style={{
-      background: "rgba(255,255,255,0.04)",
-      border: "1px solid rgba(255,255,255,0.08)",
-      backdropFilter: "blur(8px)",
-    }}
-  >
-    <div className="text-sm font-black uppercase" style={{ color: "#7bdcb5" }}>
-      Container-Basis für Simulator-Projekte
-    </div>
-
-    <ul className="mt-4 space-y-3 text-sm" style={{ color: "rgba(255,255,255,0.85)" }}>
-      <li>• Geeignet für Foresight / GC3 / TrackMan Setups</li>
-      <li>• Optimiert für Simulator-Nutzung</li>
-      <li>• Individuelle Containermaße möglich</li>
-      <li>• Innenausbau inkl. Dämmung & Elektrik</li>
-    </ul>
-  </div>
 </div>
+
+      {/* RIGHT */}
+      <div className="md:col-span-5">
+        <div
+          className="p1p-card p-8"
+          style={{
+            background: "rgba(255,255,255,0.04)",
+            border: "1px solid rgba(255,255,255,0.08)",
+            backdropFilter: "blur(8px)",
+          }}
+        >
+          <div
+            className="text-sm font-black uppercase"
+            style={{ color: "#7bdcb5" }}
+          >
+            Container-Basis für Simulator-Projekte
+          </div>
+
+          <ul
+            className="mt-4 space-y-3 text-sm"
+            style={{ color: "rgba(255,255,255,0.85)" }}
+          >
+            <li>• Geeignet für Foresight / GC3 / TrackMan Setups</li>
+<li>• Optimiert für Simulator-Nutzung</li>
+<li>• Individuelle Containermaße möglich</li>
+<li>• Innenausbau inkl. Dämmung & Elektrik</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </header>
@@ -109,7 +111,7 @@ export default function Home() {
     borderBottom: "1px solid rgba(255,255,255,0.08)",
   }}
 >
- <div className="p1p-container pt-14 md:pt-18 pb-24 md:pb-32">
+  <div className="p1p-container py-7">
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
       {[
       { icon: "✓", title: "Vermittlung", sub: "Angebot vom Containerbauer" },
@@ -162,7 +164,7 @@ export default function Home() {
 </section>
 
       {/* FEATURES */}
-<section id="features" className="p1p-container mt-24 md:mt-32">
+<section id="features" className="p1p-container mt-10">
   <div className="p1p-card p-6 md:p-10">
     <div className="text-sm font-black tracking-wider uppercase" style={{ opacity: 0.65 }}>
       Vorteile
@@ -228,7 +230,7 @@ export default function Home() {
 </section>
 
       {/* AUS EINER HAND */}
-      <section id="ablauf" className="p1p-container mt-10">
+      <section id="aus-einer-hand" className="p1p-container mt-10">
         <div className="p1p-card p-6 md:p-10 p1p-card-hover">
           <div className="text-sm font-black tracking-wider uppercase" style={{ opacity: 0.65 }}>
             Aus einer Hand
@@ -253,70 +255,64 @@ export default function Home() {
               </a>
             </div>
 
-            {/* TRANSPARENZ */}
-<div
-  className="mt-10 rounded-3xl p-6 md:p-8"
+            {/* IMPORTANT NOTICE */}
+            <section
+  className="mt-10 py-6"
   style={{
-    background: "#ffffff",
-    border: "1px solid rgba(0,0,0,0.06)",
-    boxShadow: "0 20px 70px rgba(0,0,0,0.06)",
+    borderTop: "1px solid rgba(255,255,255,0.10)",
+    borderBottom: "1px solid rgba(255,255,255,0.10)",
+    background: "rgba(255,255,255,0.03)",
   }}
 >
-  <div
-    aria-hidden
-    style={{
-      height: 3,
-      borderRadius: 999,
-      background:
-        "linear-gradient(90deg, rgba(0,196,106,0.0), rgba(0,196,106,0.55), rgba(0,196,106,0.0))",
-      marginBottom: 18,
-    }}
-  />
+  <div className="p1p-container">
+    <div className="grid md:grid-cols-3 gap-6 items-start">
+      
+      <div>
+        <div
+          className="text-xs font-black tracking-wider uppercase"
+          style={{ color: "#7bdcb5" }}
+        >
+          Transparenz
+        </div>
+        <h3 className="mt-2 text-lg md:text-xl font-black">
+          Vermittlung – kein Direktkauf
+        </h3>
+        <p
+          className="mt-2 text-sm md:text-base"
+          style={{ color: "rgba(255,255,255,0.75)" }}
+        >
+          Sie erhalten ein individuelles Angebot direkt vom ausführenden Containerbauer.
+        </p>
+      </div>
 
-  <div className="grid md:grid-cols-3 gap-12 items-start">
-    {/* SPALTE 1 */}
-    <div className="text-sm leading-relaxed text-[var(--fg)]">
-      <div className="text-sm font-semibold mb-3">Transparenz</div>
-      <div className="text-sm font-semibold mb-4">Vermittlung – kein Direktkauf</div>
+      <div>
+        <div className="font-black mb-2">✅ Enthalten</div>
+        <ul
+          className="space-y-1 text-sm"
+          style={{ color: "rgba(255,255,255,0.75)" }}
+        >
+          <li>• Rohcontainer in Simulator-Höhe</li>
+          <li>• Innenausbau inkl. Dämmung & Elektrik</li>
+          <li>• Individuelle Maßanfertigung</li>
+        </ul>
+      </div>
 
-      <p className="mb-4">
-        Sie erhalten ein individuelles Angebot direkt vom ausführenden Containerbauer – abhängig von
-        Größe, Höhe und Ausführung.
-      </p>
-
-      <p>
-        Simulator-Technik & Einrichtung (Launch Monitor, Projektor, Impact Screen, Zubehör) sind nicht
-        enthalten.
-      </p>
-    </div>
-
-    {/* SPALTE 2 */}
-    <div className="text-sm leading-relaxed text-[var(--fg)]">
-      <div className="text-sm font-semibold mb-3">Enthalten</div>
-      <ul className="space-y-3">
-        <li>Rohcontainer in Simulator-Höhe</li>
-        <li>Innenausbau inkl. Dämmung, Elektrik, Klima, Boden</li>
-        <li>Individuelle Maßanfertigung</li>
-      </ul>
-    </div>
-
-    {/* SPALTE 3 */}
-    <div className="text-sm leading-relaxed text-[var(--fg)]">
-      <div className="text-sm font-semibold mb-3">Nicht enthalten</div>
-      <ul className="space-y-3">
-        <li>Launch Monitor & Simulator-Technik</li>
-        <li>Projektor & Impact Screen</li>
-        <li>Einrichtung & Zubehör</li>
-      </ul>
-    </div>
+      <div>
+        <div className="font-black mb-2">❌ Nicht enthalten</div>
+        <ul
+          className="space-y-1 text-sm"
+          style={{ color: "rgba(255,255,255,0.75)" }}
+        >
+          <li>• Launch Monitor & Simulator-Technik</li>
+          <li>• Projektor & Impact Screen</li>
+          <li>• Einrichtung & Zubehör</li>
+        </ul>
+      </div>
   </div>
-</div>
-
-</div>
 </section>
 
-{/* TESTIMONIALS */}
-<section id="stimmen" className="p1p-container mt-10">
+      {/* TESTIMONIALS */}
+      <section id="stimmen" className="p1p-container mt-10">
         <div className="p1p-card p-6 md:p-10">
           <div className="text-sm font-black tracking-wider uppercase" style={{ opacity: 0.65 }}>
             Das sagen Kunden
@@ -373,7 +369,7 @@ export default function Home() {
             Interesse? Lass uns kurz sprechen.
           </h2>
 
-          <p className="mt-2 text-sm leading-relaxed">
+          <p className="mt-3 text-sm md:text-base" style={{ color: "var(--muted)" }}>
             Schreib uns ein paar Infos – wir melden uns schnellstmöglich.
           </p>
 
@@ -387,19 +383,19 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-<footer className="mt-16 border-t border-black/10">
-  <div className="p1p-container py-8 text-sm text-black/60">
-    © {new Date().getFullYear()} Golf Container by{" "}
-    <a
-      href="https://pro1putt.com"
-      target="_blank"
-      rel="noreferrer"
-      className="font-semibold text-black hover:opacity-80"
-    >
-      PRO1PUTT
-    </a>
-  </div>
-</footer>
+      <footer className="p1p-container pb-10">
+        <div className="text-xs" style={{ color: "var(--muted)" }}>
+         © {new Date().getFullYear()} Golf Container by PRO1PUTT ·{" "}
+          <a
+            href="https://golf-container.com/"
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "var(--p1p-green)" }}
+          >
+            Originalseite
+          </a>
+        </div>
+      </footer>
     </main>
   );
 }
